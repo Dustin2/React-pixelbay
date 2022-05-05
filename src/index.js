@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';//es loq ue hace que se muestre en panta
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "bootswatch/dist/materia/bootstrap.min.css";// impor theme materia  of bootswatch
+//remenber install with npm
 
 const root = ReactDOM.createRoot(document.getElementById('root'));// dom toma dos parametros, que va a imprimir y donde lo va a imprimir
 root.render(
