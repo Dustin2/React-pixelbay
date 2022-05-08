@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import Buscador from './Buscador'
 class Navbar extends Component {
+
+  datosBusqueda = (termino)=>{
+    console.log(termino)
+    }
+
+
     render() {
         return (
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,7 +43,9 @@ class Navbar extends Component {
           </div>
         </li>
       </ul>
-     <Buscador/>
+      
+     <Buscador //props funciona para compunicar componetes entre si
+      mensaje = {this.datosBusqueda}/>
     </div>
   </div>
 </nav>

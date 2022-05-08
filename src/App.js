@@ -4,6 +4,8 @@
 import Navbar from './componets/Navbar';
 //import Buscador from './componets/Buscador'
 
+
+
 function App() {
   return (
     <div className="app container">
@@ -12,8 +14,7 @@ function App() {
         Buscador de Imagenes
       </h1>
       <Navbar
-      //props funciona para compunicar componetes entre si
-      mensaje = "buscador"
+      
       />
     
       

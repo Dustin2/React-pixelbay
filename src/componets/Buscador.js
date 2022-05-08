@@ -10,13 +10,15 @@ class Buscador extends Component {
         //evitamos se muestren  los datos en la url  al enviarlos
         e.preventDefault();
 
-        console.log (this.busquedaref.current.value);
+      const termino =  console.log (this.busquedaref.current.value);
+        this.props.datosBusqueda(termino);
     }    
   render() {
     // metodo necesario que nos imprimira el componente en pantalla
     return (
       <form onSubmit={this.obtenerDatos}>
         <div className="row">
+        
           <div className="form-group col-md-8">
             <input ref={this.busquedaref}
               type="text"
